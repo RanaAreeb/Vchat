@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Page</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./src/main/resources/static/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -17,19 +17,23 @@
     <a href="#" target="_blank"><i class="fa fa-github"></i></a>
   </div>
   <div class="login-form">
-    <h2>Login</h2>
-    <form id="loginForm">
+    <h2>Register</h2>
+    <form id="registrationForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required>
+
       <label for="email">Email:</label>
       <input type="email" id="email" required>
 
       <label for="password">Password:</label>
       <input type="password" id="password" required>
 
-      <button type="submit">Login</button>
+      <button type="submit">Register</button>
     </form>
-    <p>Don't have an account? <a href="register.html">Register</a></p>
+    <p>Already have an account? <a href="login.html">Login</a></p>
   </div>
 </div>
-<script src="/js/login.js"></script>
+
+<script src="./src/main/resources/static/js/register.js"></script>
 </body>
 </html>
